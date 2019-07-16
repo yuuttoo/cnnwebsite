@@ -115,10 +115,38 @@ label:hover {
 .search-switcher-label{
 	margin: 0 15px;
 }
+.page-search{
+	position: relative;
+}
 /*右邊搜尋器不使用時隱藏*/
 .page-search-field{
-	width: 0;
-	visibility: hidden;
+	width: 970px;
+	position: absolute;
+	right: 40px;
+	top: -7px;
+	font-weight: 300;
+	font-size: 16px;
+	padding: 5px;
+	height: 30px;
+	-webkit-appearance: textfield;
+	display: none;
+}
+.page-search-field-label{
+	position: absolute;
+	right: 40px;
+	top: -7px;
+	height: 30px;
+	background: transparent;
+	width: 100px;
+	line-height: 30px;
+	display: none;
+	color: #000;
+}
+#search-switcher:checked~.page-search-field{
+	display: block;
+}
+#search-switcher:checked~.page-search-field-label{
+	display: block;
 }
 .international-block{
 	background: rgba(0,0,0,.9);
@@ -184,6 +212,18 @@ label:hover {
 	font-size: 15px;
 }
 
+.header-expanded-menu-block{
+	width: 100vw;
+	height: 400px;
+	background: rgba(0,0,0,.9);
+	position: absolute;
+	top: 50px;
+	right: 0;
+	display: none;
+}
+#expanded-switcher:checked~.header-expanded-menu-block{
+	display: block;
+}
 
 
 
