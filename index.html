@@ -3,60 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CNN</title>
-	<link rel="stylesheet"  href="/Users/sio/Desktop/result-oriented/CNN/css/all.min.css">
+	<link rel="stylesheet"  href="css/all.min.css">
 	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
 	<!-- 建立header ，分為左右兩塊 -->
 	<header class="page-header">
 		<div class="container">	
 			<div class="header-left">
-			<div class="page-logo">
+				<div class="page-logo">
 				<!-- 點選logo圖片時連結到首頁 -->
 				<a href="/">
-					<img src="https://raw.githubusercontent.com/yuuttoo/cnnwebsite/master/img/logo_cnn.png" alt="Page Logo">
+					<img src="img/logo_cnn.png" alt="Page Logo">
 				</a>				
 			</div>
 			<nav class="page-nav">
 				<ul>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-					<li><a href="">item</a></li>
-				</ul>
-				
-
+					<li><a href="">Regions</a></li>
+					<li><a href="">U.S. Politics</a></li>
+					<li><a href="">Money</a></li>
+					<li><a href="">Entertainment</a></li>
+					<li><a href="">Tech</a></li>
+					<li><a href="">Sport</a></li>
+					<li><a href="">Travel</a></li>
+					<li><a href="">Style</a></li>
+					<li><a href="">Health</a></li>
+					<li><a href="">Video</a></li>
+					<li><a href="">VR</a></li>
+				</ul>			
 			</nav>
-
-
 			</div>
 			<div class="header-right">
-				<div class="international-edition">
-				<input type="checkbox" id="internation-switcher" hidden>
+			  <div class="international-edition">
+				<input type="checkbox" id="international-switcher" hidden>
 				<label for="international-switcher">International Edition +</label>	
+				<div class="international-block">
+					<ul>
+						<li>U.S.</li>
+						<li>Arabic</li>
+						<li>Español</li>
+					</ul>
+					<hr>
+					<p>Set Editon Preference:</p>
+				<div class="row-block flex-block">
+					<input type="radio" id="us-id"name="c-group">
+					<label for="us-id">U.S.</label>
+					<input type="radio" id="inter-id" name="c-group" checked>
+					<label for="inter-id">International</label>
 				</div>
-				<div class="page-search"></div>
+					<div class="row-block flex-block">
+					<button class="confirm">Confirm</button>
+				</div>
+			</div>
+		</div>				
+			<div class="page-search">
 					<input type="checkbox" id="search-switcher" hidden> <!-- 隱藏搜尋器 -->
 					<input type="search" class="page-search-field">
-					<label for="search-switcher"><i class="fas fa-search"></i></label>
-					</div>
-					<!-- 漢堡式伸展清單 -->			
+					<label for="search-switcher" class="search-switcher-label"><i class="fas fa-search"></i></label>
+			</div>
+					<!-- 漢堡式伸展清單 -->
 			<div class="header-expanded-menu">
 				<input type="checkbox" id="expanded-switcher" hidden><!-- 隱藏搜尋器 -->
-				<label for="expanded-switcher">=<label>
-			</div>
-			
+				<label for="expanded-switcher"><i class="fas fa-bars"></i></label>
+			</div>											
 		</div>	
-
-	</header>
-
-</head>
-<body>
-	
-</body>
+	</div>	
+  </header>
+ </body> 
 </html>
