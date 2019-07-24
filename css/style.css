@@ -289,6 +289,12 @@ label:hover {
 .expanded-bottom-block .international-block .flex-block{
 	align-items: center;
 }
+
+/*=======Main==========*/
+article img{
+	width: 100%;
+}
+
 /*=======Footer==========*/
 .page-footer{
 	background: #0c0c0c;
