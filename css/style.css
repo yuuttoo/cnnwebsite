@@ -319,6 +319,10 @@ h1{
 	font-weight: bold;
 	width: auto;
 	padding: 0 10px; 
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	white-space: nowrap;
 }	
 .label-block{
 	position: absolute;
@@ -374,15 +378,69 @@ article{
 	font-weight: 300;
 	line-height: 1.2;
 }
-
-
-
-
+.small-size{
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.full-width-heading{
+	font-size: 30px;
+	font-weight: 300;
+	color: rgb(38,38,38);
+	line-height: 1.13;
+	background-color: rgba(250,250,250,0.85);
+	width: 100%;
+	padding: 7px 10px;
+}
+.no-margin{
+	margin: 0;
+}
+.top-border{
+	border-top: 1px solid #d9d9d9;
+}
+.with-opacity{
+	background: rgba(250,250,250,0.85);
+}
+.section-heading{
+	color: #262626;
+	font-size: 24px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	margin-bottom: 15px;
+}
+.section-heading:after{
+	content: '.';
+	font-size: 0;
+	height: 9px;
+	border-top: 4px solid #d9d9d9;
+	border-bottom: 4px solid #d9d9d9;
+	width: 100%;
+	margin-left: 5px;
+}
+.dark-section{
+	background: #1a1a1a;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.dark-section .section-heading:after{
+	border-color: #c00;
+}
+.dark-section .image-label{
+	background: #fff;
+	color: #c00;
+}
+.dark-section .with-opacity{
+	background: rgba(38, 38, 38, 0.85);
+}
+.dark-section h3{
+	color: #fff;
+}
 /*=======Footer==========*/
 .page-footer{
 	background: #0c0c0c;
 	color: #fff;
-	margin-top: 300px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
